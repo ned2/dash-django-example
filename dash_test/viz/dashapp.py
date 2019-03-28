@@ -8,7 +8,7 @@ from . import router
 
 app.layout = html.Div(children=[
     dcc.Location(id='url', refresh=False),
-    dcc.Link('Index', href='/'),
+    dcc.Link('Index', href=f'{app.url_base_pathname}'),
     ', ',
     dcc.Link('Figure 1', href=f'{app.url_base_pathname}fig1'),
     ', ',
