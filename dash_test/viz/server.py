@@ -7,6 +7,7 @@ URL_BASE_PATHNAME = '/viz/'
 server = Flask(__name__)
 
 app = Dash(
+    __name__,
     server=server,
     url_base_pathname=URL_BASE_PATHNAME
 )
